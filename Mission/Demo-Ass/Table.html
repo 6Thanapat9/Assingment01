@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table</title>
+    <style>
+        h1{
+            font-size: 15px;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th{
+            border: 1px solid black;
+            padding: 12px;
+            background-color: rgb(219, 255, 58);
+        }
+        td{
+            border: 1px solid black;
+            padding: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ตารางสินค้า</h1>
+    <br/>
+    <button onclick="showTable()">เปิดตาราง</button>
+    <button onclick="hideTable()">ปิดตาราง</button>
+    <br/>
+    <table class="center" id="mytable"style="display: none">
+        <caption>ตารางและปุ่ม</caption>
+        <tr>
+            <th>รายการที่ 1</th>
+            <th>รายการที่ 2</th>
+            <th>รายการที่ 3</th>
+        </tr>
+        <tr>
+            <td>75</td>
+            <td>42</td>
+            <td>52</td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td>35</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>77</td>
+            <td>24</td>
+            <td>12</td>
+        </tr>
+    </table>
+
+    <script>
+        function showTable() {
+            var table = document.getElementById("mytable");
+            table.style.display = "table"
+        }
+        function hideTable() {
+            var table = document.getElementById("mytable");
+            table.style.display = "none";
+        }
+    </script>
+
+</body>    
+</html>
+  
